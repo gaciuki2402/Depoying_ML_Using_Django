@@ -1,3 +1,4 @@
+import os
 """
 Django settings for djangoMLDeployment project.
 
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'djangoMLDeployment.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'template'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
