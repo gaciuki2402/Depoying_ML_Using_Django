@@ -1,29 +1,32 @@
 from django.shortcuts import render
+import joblib
 from django.http import JsonResponse
-
 from joblib import load
 import pandas as pd
-import os
-model = load('./savedModels/PID_Model.joblib')
+
+model_path = r'C:\Users\user\djangoMLDeployment\savedModels\PID_Model.joblib'
+model = load(model_path)
 
 def predictor(request):
     return render(request, 'main.html')
 
+# Define your view function
 def formInfo(request):
-    age = request.GET['age']
-    stds_uti_history = request.GET['stds_uti']
-    iud_use = request.GET['iud_use']
-    past_pelvic_pain = request.GET['past_pelvic_pain']
-    imaging_results = request.GET['imaging_results']
-    abnormal_discharge = request.GET['abnormal_discharge']
-    irregular_periods = request.GET['irregular_periods']
-    dyspareunia = request.GET['dyspareunia']
-    dysuria = request.GET['dysuria']
-    wbc_count = request.GET['wbc_count']
-    esr = request.GET['esr']
-    crp_level = request.GET['crp_level']
+    if request.method == 'POST':
+        age = request.POST.get('age')
+        stds_uti_history = request.POST.get('stds_uti_history')
+        iud_use = request.POST.get('iud_use')
+        past_pelvic_pain = request.POST.get('past_pelvic_pain')
+        imaging_results = request.POST.get('imaging_results')
+        abnormal_discharge = request.POST.get('abnormal_discharge')
+        irregular_periods = request.POST.get('irregular_periods')
+        dyspareunia = request.POST.get('dyspareunia')
+        dysuria = request.POST.get('dysuria')
+        wbc_count = request.POST.get('wbc_count')
+        esr = request.POST.get('esr')
+        crp_level = request.POST.get('crp_level')
 # create dataframe for input data
-    input_data = pd.DataFrame({
+        input_data = pd.DataFrame({
         'Age': [age],
         'STDs/UTI History': [stds_uti_history],
         'IUD Use': [iud_use],
@@ -37,6 +40,7 @@ def formInfo(request):
         'ESR': [esr],
         'CRP Level': [crp_level]
     })
-    y_pred = model.predict(input_data)[0]
-    return JsonResponse({'prediction': 'Positive' if y_pred == 1 else 'Negative'})
+        y_pred = model.predict(input_data)[0]
+        prediction = 'Positive' if y_pred == 1 else 'Negative'
+        return JsonResponse({'prediction': prediction})
     return render(request, 'result.html')

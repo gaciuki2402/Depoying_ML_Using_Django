@@ -3,25 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PID Application</title>
+    <title>PID Prediction Application</title>
 </head>
 <body>
-    <h1>PID Django Application</h1>
+    <h1>PID Prediction Application</h1>
     <hr>
-    <form action="">
-        Age : <input type="number" name="age" required><br>
-        STDs/UTI History : <input type="number" name="sti's/uti" required><br>
-        IUD Use : <input type="number" name="iud_use" required><br>
-        Past Pelvic : <input type="number" name="past_pelvic" required><br>
-        Imaging Results : <input type="number" name="imaging_results" required><br>
-        Abnormal Discharge: <input type="number" name="abnormal_discharge" required><br>
-        Irregular Periods : <input type="number" name="irregular_periods" required><br>
-        Dyspareunia : <input type="number" name="dyspareunia" required><br>
-        Dysuria : <input type="number" name="dysuria" required><br>
-        WBC Count : <input type="number" name="wbc_count" required><br>
-        ESR : <input type="number" name="esr" required><br>
-        CRP Level : <input type="number" name="crp_level" required><br>
-        <input type="submit">
+    <form method="post" action="{% url 'formInfo' %}">
+        {% csrf_token %}
+        <label for="age">Age:</label> 
+        <input type="number" id="age" required><br><br>
+
+        <label for="stds_uti_history">STDs/UTI History:</label><br>
+        <input type="radio" id="stds_uti_history_yes" name="stds_uti_history" value="Yes" required>
+        <label for="stds_uti_history_yes">Yes</label><br>
+        <input type="radio" id="stds_uti_history_no" name="stds_uti_history" value="No" required>
+        <label for="stds_uti_history_no">No</label><br><br>
+
+        
+        <label for="iud_use">IUD Use:</label>
+        <select id="iud_use" name="iud_use" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="past_pelvic_pain">Past Pelvic Pain:</label>
+        <select id="past_pelvic_pain" name="past_pelvic_pain" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="imaging_results">Imaging Results:</label>
+        <input type="text" id="imaging_results" name="imaging_results" required><br><br>
+
+        <label for="abnormal_discharge">Abnormal Discharge:</label>
+        <input type="text" id="abnormal_discharge" name="abnormal_discharge" required><br><br>
+
+        <label for="irregular_periods">Irregular Periods:</label>
+        <select id="irregular_periods" name="irregular_periods" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="dyspareunia">Dyspareunia:</label>
+        <select id="dyspareunia" name="dyspareunia" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="dysuria">Dysuria:</label>
+        <select id="dysuria" name="dysuria" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="wbc_count">WBC Count:</label>
+        <input type="number" id="wbc_count" name="wbc_count" required><br><br>
+
+        <label for="esr">ESR:</label>
+        <input type="number" id="esr" name="esr" required><br><br>
+
+        <label for="crp_level">CRP Level:</label>
+        <input type="number" id="crp_level" name="crp_level" required><br><br>
+     
+        <input type="submit" value="Predict">
     </form>
 </body>
 </html>

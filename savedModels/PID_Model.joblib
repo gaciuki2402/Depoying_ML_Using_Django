@@ -16,20 +16,20 @@
   "cells": [
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": 23,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "PtvOPdp6D-QY",
-        "outputId": "e09abf1d-332c-4a0a-e40b-d9cd237b678b"
+        "outputId": "e8ea634b-f8a3-4ed1-fb28-32d6a007eb86"
       },
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Mounted at /content/drive\n"
+            "Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount(\"/content/drive\", force_remount=True).\n"
           ]
         }
       ],
@@ -66,7 +66,7 @@
       "metadata": {
         "id": "WsJqkou4FUz8"
       },
-      "execution_count": 2,
+      "execution_count": 24,
       "outputs": []
     },
     {
@@ -86,7 +86,7 @@
       "metadata": {
         "id": "nJwk6WJIFVLc"
       },
-      "execution_count": 3,
+      "execution_count": 25,
       "outputs": []
     },
     {
@@ -100,9 +100,9 @@
           "height": 434
         },
         "id": "t7coJgjVM_YD",
-        "outputId": "f05bfdbd-f5af-4601-90e6-96375ff25f7a"
+        "outputId": "1515e837-2bf7-420e-ce33-c2a26b11b611"
       },
-      "execution_count": 4,
+      "execution_count": 26,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -138,7 +138,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-3ddae305-4749-47a9-b821-35bf1aac4879\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-ac52bec4-ab67-4821-9e23-6fbbf39b306f\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -277,7 +277,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-3ddae305-4749-47a9-b821-35bf1aac4879')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-ac52bec4-ab67-4821-9e23-6fbbf39b306f')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -329,12 +329,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-3ddae305-4749-47a9-b821-35bf1aac4879 button.colab-df-convert');\n",
+              "        document.querySelector('#df-ac52bec4-ab67-4821-9e23-6fbbf39b306f button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-3ddae305-4749-47a9-b821-35bf1aac4879');\n",
+              "        const element = document.querySelector('#df-ac52bec4-ab67-4821-9e23-6fbbf39b306f');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -354,8 +354,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "<div id=\"df-978343c0-7f13-4a23-a1e1-c6a234c21728\">\n",
-              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-978343c0-7f13-4a23-a1e1-c6a234c21728')\"\n",
+              "<div id=\"df-c4cbe4e8-709c-43bd-8d85-2d5e2fb7ed9e\">\n",
+              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-c4cbe4e8-709c-43bd-8d85-2d5e2fb7ed9e')\"\n",
               "            title=\"Suggest charts\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -474,7 +474,7 @@
               "    }\n",
               "    (() => {\n",
               "      let quickchartButtonEl =\n",
-              "        document.querySelector('#df-978343c0-7f13-4a23-a1e1-c6a234c21728 button');\n",
+              "        document.querySelector('#df-c4cbe4e8-709c-43bd-8d85-2d5e2fb7ed9e button');\n",
               "      quickchartButtonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "    })();\n",
@@ -491,7 +491,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 4
+          "execution_count": 26
         }
       ]
     },
@@ -514,7 +514,7 @@
       "metadata": {
         "id": "eg2zYS7aM_aV"
       },
-      "execution_count": 5,
+      "execution_count": 27,
       "outputs": []
     },
     {
@@ -529,9 +529,9 @@
         },
         "collapsed": true,
         "id": "7Up9hP32M_fz",
-        "outputId": "b97b5943-3714-43b7-c84f-f76f3d1dfff4"
+        "outputId": "1e3afb8f-b6bc-4bc4-b094-4db28935a948"
       },
-      "execution_count": 6,
+      "execution_count": 28,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -567,7 +567,7 @@
             ],
             "text/html": [
               "\n",
-              "  <div id=\"df-ed6529c9-70bb-4ae5-a977-2350870d5fb8\" class=\"colab-df-container\">\n",
+              "  <div id=\"df-283a8d31-5088-4b6b-9d0a-827bd7171ea2\" class=\"colab-df-container\">\n",
               "    <div>\n",
               "<style scoped>\n",
               "    .dataframe tbody tr th:only-of-type {\n",
@@ -688,7 +688,7 @@
               "    <div class=\"colab-df-buttons\">\n",
               "\n",
               "  <div class=\"colab-df-container\">\n",
-              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-ed6529c9-70bb-4ae5-a977-2350870d5fb8')\"\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-283a8d31-5088-4b6b-9d0a-827bd7171ea2')\"\n",
               "            title=\"Convert this dataframe to an interactive table.\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -740,12 +740,12 @@
               "\n",
               "    <script>\n",
               "      const buttonEl =\n",
-              "        document.querySelector('#df-ed6529c9-70bb-4ae5-a977-2350870d5fb8 button.colab-df-convert');\n",
+              "        document.querySelector('#df-283a8d31-5088-4b6b-9d0a-827bd7171ea2 button.colab-df-convert');\n",
               "      buttonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "\n",
               "      async function convertToInteractive(key) {\n",
-              "        const element = document.querySelector('#df-ed6529c9-70bb-4ae5-a977-2350870d5fb8');\n",
+              "        const element = document.querySelector('#df-283a8d31-5088-4b6b-9d0a-827bd7171ea2');\n",
               "        const dataTable =\n",
               "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
               "                                                    [key], {});\n",
@@ -765,8 +765,8 @@
               "  </div>\n",
               "\n",
               "\n",
-              "<div id=\"df-550325d2-34b6-4f78-9e6c-1264314a6bee\">\n",
-              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-550325d2-34b6-4f78-9e6c-1264314a6bee')\"\n",
+              "<div id=\"df-863588ec-2ad5-49e0-8b55-55978283ba08\">\n",
+              "  <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-863588ec-2ad5-49e0-8b55-55978283ba08')\"\n",
               "            title=\"Suggest charts\"\n",
               "            style=\"display:none;\">\n",
               "\n",
@@ -885,7 +885,7 @@
               "    }\n",
               "    (() => {\n",
               "      let quickchartButtonEl =\n",
-              "        document.querySelector('#df-550325d2-34b6-4f78-9e6c-1264314a6bee button');\n",
+              "        document.querySelector('#df-863588ec-2ad5-49e0-8b55-55978283ba08 button');\n",
               "      quickchartButtonEl.style.display =\n",
               "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
               "    })();\n",
@@ -901,7 +901,7 @@
             }
           },
           "metadata": {},
-          "execution_count": 6
+          "execution_count": 28
         }
       ]
     },
@@ -929,7 +929,7 @@
       "metadata": {
         "id": "_D4zQlcYDySj"
       },
-      "execution_count": 7,
+      "execution_count": 29,
       "outputs": []
     },
     {
@@ -942,9 +942,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "2m6VKh8rDyVY",
-        "outputId": "52269b5c-9cce-496f-c833-beb18aebcb0b"
+        "outputId": "bb930328-959a-49b5-c5d3-4fd3cdb25b67"
       },
-      "execution_count": 8,
+      "execution_count": 30,
       "outputs": [
         {
           "output_type": "stream",
@@ -1017,9 +1017,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "AomQ9shkDyZY",
-        "outputId": "2ecb5842-e5e3-4965-e918-a6cce7569a90"
+        "outputId": "4e2afa41-e7bb-4114-84ab-4b6878fbeb31"
       },
-      "execution_count": 9,
+      "execution_count": 31,
       "outputs": [
         {
           "output_type": "stream",
@@ -1066,7 +1066,7 @@
       "metadata": {
         "id": "b1KZYy8lRFIj"
       },
-      "execution_count": 10,
+      "execution_count": 32,
       "outputs": []
     },
     {
@@ -1086,7 +1086,7 @@
       "metadata": {
         "id": "lBv8m1kE_rHw"
       },
-      "execution_count": 11,
+      "execution_count": 33,
       "outputs": []
     },
     {
@@ -1115,9 +1115,9 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "7c2ebd8c-b6f1-46ac-e85d-b262a33f0871"
+        "outputId": "0595e6a7-4bd9-4e5a-d0b7-d5d977c69166"
       },
-      "execution_count": 12,
+      "execution_count": 34,
       "outputs": [
         {
           "output_type": "stream",
@@ -1149,9 +1149,9 @@
           "base_uri": "https://localhost:8080/",
           "height": 124
         },
-        "outputId": "d1a95951-3412-4f46-84d5-6b42cad9ca19"
+        "outputId": "d81082fc-1ece-4e24-e978-1a42caf6d755"
       },
-      "execution_count": 13,
+      "execution_count": 35,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1160,11 +1160,11 @@
               "Pipeline(steps=[('imputer', SimpleImputer()), ('scaler', StandardScaler())])"
             ],
             "text/html": [
-              "<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: \"▸\";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: \"▾\";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: \"\";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: \"\";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: \"\";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id=\"sk-container-id-1\" class=\"sk-top-container\"><div class=\"sk-text-repr-fallback\"><pre>Pipeline(steps=[(&#x27;imputer&#x27;, SimpleImputer()), (&#x27;scaler&#x27;, StandardScaler())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class=\"sk-container\" hidden><div class=\"sk-item sk-dashed-wrapped\"><div class=\"sk-label-container\"><div class=\"sk-label sk-toggleable\"><input class=\"sk-toggleable__control sk-hidden--visually\" id=\"sk-estimator-id-1\" type=\"checkbox\" ><label for=\"sk-estimator-id-1\" class=\"sk-toggleable__label sk-toggleable__label-arrow\">Pipeline</label><div class=\"sk-toggleable__content\"><pre>Pipeline(steps=[(&#x27;imputer&#x27;, SimpleImputer()), (&#x27;scaler&#x27;, StandardScaler())])</pre></div></div></div><div class=\"sk-serial\"><div class=\"sk-item\"><div class=\"sk-estimator sk-toggleable\"><input class=\"sk-toggleable__control sk-hidden--visually\" id=\"sk-estimator-id-2\" type=\"checkbox\" ><label for=\"sk-estimator-id-2\" class=\"sk-toggleable__label sk-toggleable__label-arrow\">SimpleImputer</label><div class=\"sk-toggleable__content\"><pre>SimpleImputer()</pre></div></div></div><div class=\"sk-item\"><div class=\"sk-estimator sk-toggleable\"><input class=\"sk-toggleable__control sk-hidden--visually\" id=\"sk-estimator-id-3\" type=\"checkbox\" ><label for=\"sk-estimator-id-3\" class=\"sk-toggleable__label sk-toggleable__label-arrow\">StandardScaler</label><div class=\"sk-toggleable__content\"><pre>StandardScaler()</pre></div></div></div></div></div></div></div>"
+              "<style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: \"▸\";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: \"▾\";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: \"\";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: \"\";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: \"\";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id=\"sk-container-id-2\" class=\"sk-top-container\"><div class=\"sk-text-repr-fallback\"><pre>Pipeline(steps=[(&#x27;imputer&#x27;, SimpleImputer()), (&#x27;scaler&#x27;, StandardScaler())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class=\"sk-container\" hidden><div class=\"sk-item sk-dashed-wrapped\"><div class=\"sk-label-container\"><div class=\"sk-label sk-toggleable\"><input class=\"sk-toggleable__control sk-hidden--visually\" id=\"sk-estimator-id-4\" type=\"checkbox\" ><label for=\"sk-estimator-id-4\" class=\"sk-toggleable__label sk-toggleable__label-arrow\">Pipeline</label><div class=\"sk-toggleable__content\"><pre>Pipeline(steps=[(&#x27;imputer&#x27;, SimpleImputer()), (&#x27;scaler&#x27;, StandardScaler())])</pre></div></div></div><div class=\"sk-serial\"><div class=\"sk-item\"><div class=\"sk-estimator sk-toggleable\"><input class=\"sk-toggleable__control sk-hidden--visually\" id=\"sk-estimator-id-5\" type=\"checkbox\" ><label for=\"sk-estimator-id-5\" class=\"sk-toggleable__label sk-toggleable__label-arrow\">SimpleImputer</label><div class=\"sk-toggleable__content\"><pre>SimpleImputer()</pre></div></div></div><div class=\"sk-item\"><div class=\"sk-estimator sk-toggleable\"><input class=\"sk-toggleable__control sk-hidden--visually\" id=\"sk-estimator-id-6\" type=\"checkbox\" ><label for=\"sk-estimator-id-6\" class=\"sk-toggleable__label sk-toggleable__label-arrow\">StandardScaler</label><div class=\"sk-toggleable__content\"><pre>StandardScaler()</pre></div></div></div></div></div></div></div>"
             ]
           },
           "metadata": {},
-          "execution_count": 13
+          "execution_count": 35
         }
       ]
     },
@@ -1192,7 +1192,7 @@
       "metadata": {
         "id": "PqjVZSoiAldt"
       },
-      "execution_count": 14,
+      "execution_count": 36,
       "outputs": []
     },
     {
@@ -1224,7 +1224,7 @@
       "metadata": {
         "id": "-EaUwGrhAlgL"
       },
-      "execution_count": 15,
+      "execution_count": 37,
       "outputs": []
     },
     {
@@ -1258,9 +1258,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "mlteuuZRWyf6",
-        "outputId": "967ece13-17e4-400d-84fc-e27338dae916"
+        "outputId": "51eabe63-0f24-4df2-e31e-a74a785f0e79"
       },
-      "execution_count": 16,
+      "execution_count": 38,
       "outputs": [
         {
           "output_type": "stream",
@@ -1304,9 +1304,9 @@
           "height": 654
         },
         "id": "wnfqocyPFjkP",
-        "outputId": "2a81ba72-d071-4f23-e0b6-d05ba888642a"
+        "outputId": "7e557195-3ac3-4c1b-8728-b93d2734cad4"
       },
-      "execution_count": 17,
+      "execution_count": 39,
       "outputs": [
         {
           "output_type": "display_data",
@@ -1353,9 +1353,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "2pC3bFupFjyL",
-        "outputId": "3cb6a99c-448b-4f2b-bd85-325dacbb627a"
+        "outputId": "2d9923cf-2884-4801-b612-9a8368c5a2e3"
       },
-      "execution_count": 18,
+      "execution_count": 40,
       "outputs": [
         {
           "output_type": "stream",
@@ -1377,9 +1377,9 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "9772319a-93bc-4e29-d1aa-d6631ffd9ff2"
+        "outputId": "38688093-4474-4ce9-8359-038a33df8bbb"
       },
-      "execution_count": 29,
+      "execution_count": 41,
       "outputs": [
         {
           "output_type": "stream",
@@ -1393,38 +1393,96 @@
     {
       "cell_type": "code",
       "source": [
-        "# Import the correct function\n",
-        "from joblib import dump\n"
-      ],
-      "metadata": {
-        "id": "Wf4DzqVTWyiP"
-      },
-      "execution_count": 33,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "dump(model, 'PID.joblib')"
+        "import joblib\n",
+        "\n",
+        "# Assuming 'pipeline' is your complete pipeline including preprocessing and the classifier\n",
+        "joblib.dump(pipeline, r'C:\\Users\\user\\djangoMLDeployment\\savedModels\\PID_Model.joblib')\n"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "TOkBgI9lrbDx",
-        "outputId": "ad88a1de-452e-4097-ef3b-c17320c205eb"
+        "id": "sRGkqOlh49gk",
+        "outputId": "b3e03211-2e79-4203-d3c7-77d258bcc17c"
       },
-      "execution_count": 34,
+      "execution_count": 57,
       "outputs": [
         {
           "output_type": "execute_result",
           "data": {
             "text/plain": [
-              "['PID.joblib']"
+              "['C:\\\\Users\\\\user\\\\djangoMLDeployment\\\\savedModels\\\\PID_Model.joblib']"
             ]
           },
           "metadata": {},
-          "execution_count": 34
+          "execution_count": 57
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Import the correct function\n",
+        "import joblib\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Define the model path\n",
+        "model_path = r'C:\\Users\\user\\djangoMLDeployment\\savedModels\\PID_Model.joblib'\n",
+        "\n",
+        "# Load the model\n",
+        "try:\n",
+        "    # Load the model (pipeline)\n",
+        "    pipeline = joblib.load(model_path)\n",
+        "    print(\"Model loaded successfully\")\n",
+        "\n",
+        "    # Define the prediction function\n",
+        "    def predict_pid(age, stds_uti_history, iud_use, past_pelvic_pain, imaging_results, abnormal_discharge, irregular_periods, dyspareunia, dysuria, wbc_count, esr, crp_level):\n",
+        "        new_data = pd.DataFrame({\n",
+        "            'Age': [age],\n",
+        "            'STDs/UTI History': [stds_uti_history],\n",
+        "            'IUD Use': [iud_use],\n",
+        "            'Past Pelvic Pain': [past_pelvic_pain],\n",
+        "            'Imaging Results': [imaging_results],\n",
+        "            'Abnormal Discharge': [abnormal_discharge],\n",
+        "            'Irregular Periods': [irregular_periods],\n",
+        "            'Dyspareunia': [dyspareunia],\n",
+        "            'Dysuria': [dysuria],\n",
+        "            'WBC Count': [wbc_count],\n",
+        "            'ESR': [esr],\n",
+        "            'CRP Level': [crp_level]\n",
+        "        })\n",
+        "\n",
+        "        # Make prediction using the loaded pipeline\n",
+        "        prediction = pipeline.predict(new_data)[0]\n",
+        "        return prediction\n",
+        "\n",
+        "    # Test prediction\n",
+        "    new_prediction = predict_pid(28, 'No', 'Yes', 'No', 'Normal (US)', 'None', 'Regular', 'No', 'No', 'Normal', 'Normal', 'Normal')\n",
+        "    print(\"Predicted PID Diagnosis (1=Positive, 0=Negative):\", new_prediction)\n",
+        "    if new_prediction == 0:\n",
+        "        print(\"PID Negative\")\n",
+        "    else:\n",
+        "        print(\"PID Positive\")\n",
+        "except Exception as e:\n",
+        "    print(f\"Error loading model: {e}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "al54MQA81nQi",
+        "outputId": "f5eedfb8-2f06-4385-aa1b-02a40012b4d7"
+      },
+      "execution_count": 58,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Model loaded successfully\n",
+            "Predicted PID Diagnosis (1=Positive, 0=Negative): 0\n",
+            "PID Negative\n"
+          ]
         }
       ]
     },
@@ -1432,7 +1490,7 @@
       "cell_type": "code",
       "source": [],
       "metadata": {
-        "id": "4NU4a1g7rbFy"
+        "id": "DQdzwxwB1ncs"
       },
       "execution_count": null,
       "outputs": []
@@ -1441,7 +1499,7 @@
       "cell_type": "code",
       "source": [],
       "metadata": {
-        "id": "7PzN5OdXrbKG"
+        "id": "r75V_iOo1nfk"
       },
       "execution_count": null,
       "outputs": []
