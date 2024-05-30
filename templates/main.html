@@ -11,7 +11,7 @@
     <form method="post" action="{% url 'formInfo' %}">
         {% csrf_token %}
         <label for="age">Age:</label> 
-        <input type="number" id="age" required><br><br>
+        <input type="number" id="age" name="age" required><br><br>
 
         <label for="stds_uti_history">STDs/UTI History:</label><br>
         <input type="radio" id="stds_uti_history_yes" name="stds_uti_history" value="Yes" required>
@@ -57,13 +57,13 @@
         </select><br><br>
 
         <label for="wbc_count">WBC Count:</label>
-        <input type="number" id="wbc_count" name="wbc_count" required><br><br>
+        <input type="text" id="wbc_count" name="wbc_count" required><br><br>
 
         <label for="esr">ESR:</label>
-        <input type="number" id="esr" name="esr" required><br><br>
+        <input type="text" id="esr" name="esr" required><br><br>
 
         <label for="crp_level">CRP Level:</label>
-        <input type="number" id="crp_level" name="crp_level" required><br><br>
+        <input type="text" id="crp_level" name="crp_level" required><br><br>
      
         <input type="submit" value="Predict">
     </form>
