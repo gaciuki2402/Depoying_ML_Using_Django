@@ -4,67 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PID Prediction Application</title>
+    <style>
+        body {
+            background-color: #89028C; /* Dark Purple background color */
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark gray text color for good contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of the viewport */
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #FD32CB; /* Pink for a professional touch */
+            margin-bottom: 10px;
+        }
+        form {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #ffffff; /* White form background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            overflow-y: auto; /* Ensure form can scroll if content overflows */
+            max-height: 90vh; /* Ensure the form fits within the viewport */
+        }
+        label {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #FD32CB; /* Pink submit button */
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #89028C; /* Dark Purple on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>PID Prediction Application</h1>
-    <hr>
     <form method="post" action="{% url 'formInfo' %}">
+        <h1>PID Health Forecast</h1>
+        <hr>
         {% csrf_token %}
         <label for="age">Age:</label> 
-        <input type="number" id="age" name="age" required><br><br>
+        <input type="number" id="age" name="age" required>
 
-        <label for="stds_uti_history">STDs/UTI History:</label><br>
-        <input type="radio" id="stds_uti_history_yes" name="stds_uti_history" value="Yes" required>
-        <label for="stds_uti_history_yes">Yes</label><br>
-        <input type="radio" id="stds_uti_history_no" name="stds_uti_history" value="No" required>
-        <label for="stds_uti_history_no">No</label><br><br>
+        <label for="stds_uti_history">STDs/UTI History:</label>
+        <div>
+            <input type="radio" id="stds_uti_history_yes" name="stds_uti_history" value="Yes" required>
+            <label for="stds_uti_history_yes">Yes</label>
+            <input type="radio" id="stds_uti_history_no" name="stds_uti_history" value="No" required>
+            <label for="stds_uti_history_no">No</label>
+        </div>
 
-        
         <label for="iud_use">IUD Use:</label>
-        <select id="iud_use" name="iud_use" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select><br><br>
+        <div>
+            <input type="radio" id="iud_use_yes" name="iud_use" value="Yes" required>
+            <label for="iud_use_yes">Yes</label>
+            <input type="radio" id="iud_use_no" name="iud_use" value="No" required>
+            <label for="iud_use_no">No</label>
+        </div>
 
         <label for="past_pelvic_pain">Past Pelvic Pain:</label>
-        <select id="past_pelvic_pain" name="past_pelvic_pain" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select><br><br>
+        <div>
+            <input type="radio" id="past_pelvic_pain_yes" name="past_pelvic_pain" value="Yes" required>
+            <label for="past_pelvic_pain_yes">Yes</label>
+            <input type="radio" id="past_pelvic_pain_no" name="past_pelvic_pain" value="No" required>
+            <label for="past_pelvic_pain_no">No</label>
+        </div>
 
         <label for="imaging_results">Imaging Results:</label>
-        <input type="text" id="imaging_results" name="imaging_results" required><br><br>
+        <input type="text" id="imaging_results" name="imaging_results" required>
 
         <label for="abnormal_discharge">Abnormal Discharge:</label>
-        <input type="text" id="abnormal_discharge" name="abnormal_discharge" required><br><br>
+        <input type="text" id="abnormal_discharge" name="abnormal_discharge" required>
 
         <label for="irregular_periods">Irregular Periods:</label>
-        <select id="irregular_periods" name="irregular_periods" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select><br><br>
+        <div>
+            <input type="radio" id="irregular_periods_yes" name="irregular_periods" value="Yes" required>
+            <label for="irregular_periods_yes">Yes</label>
+            <input type="radio" id="irregular_periods_no" name="irregular_periods" value="No" required>
+            <label for="irregular_periods_no">No</label>
+        </div>
 
         <label for="dyspareunia">Dyspareunia:</label>
-        <select id="dyspareunia" name="dyspareunia" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select><br><br>
+        <div>
+            <input type="radio" id="dyspareunia_yes" name="dyspareunia" value="Yes" required>
+            <label for="dyspareunia_yes">Yes</label>
+            <input type="radio" id="dyspareunia_no" name="dyspareunia" value="No" required>
+            <label for="dyspareunia_no">No</label>
+        </div>
 
         <label for="dysuria">Dysuria:</label>
-        <select id="dysuria" name="dysuria" required>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-        </select><br><br>
+        <div>
+            <input type="radio" id="dysuria_yes" name="dysuria" value="Yes" required>
+            <label for="dysuria_yes">Yes</label>
+            <input type="radio" id="dysuria_no" name="dysuria" value="No" required>
+            <label for="dysuria_no">No</label>
+        </div>
 
         <label for="wbc_count">WBC Count:</label>
-        <input type="text" id="wbc_count" name="wbc_count" required><br><br>
+        <input type="text" id="wbc_count" name="wbc_count" required>
 
         <label for="esr">ESR:</label>
-        <input type="text" id="esr" name="esr" required><br><br>
+        <input type="text" id="esr" name="esr" required>
 
         <label for="crp_level">CRP Level:</label>
-        <input type="text" id="crp_level" name="crp_level" required><br><br>
-     
+        <input type="text" id="crp_level" name="crp_level" required>
+
         <input type="submit" value="Predict">
     </form>
 </body>
